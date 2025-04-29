@@ -1,0 +1,302 @@
+:root {
+  --dark-purple: #1E0E32;
+  --dark-purple-2: #2B2F38;
+  --dark-purple-3: #34343F;
+  --purple: #8054E0;
+  --purple-2: #3B2767;
+  --light-bg: #F9F5FF;
+  --light-bg-2: #F7F5FF;
+  --light-bg-3: #EFEAF9;
+  --light-purple: #F4EFFE;
+  --danger-op-1: rgba(240, 68, 56, 0.1);
+  --darkClr: #101828;
+  --grey-clr: #667085;
+  --grey-clr2: #475467;
+  --grey-clr5: #5D6679;
+  --dark-grey: #344054;
+  --grey-clr3: #D0D3D9;
+  --grey-clr4: #989FAD;
+  --grey-clr6: #464665;
+  --grey-clr7: #858BA0;
+  --border-clr: #E7E7EA;
+  --purple-op-1: rgba(141, 92, 246, 0.1);
+  --red-clr: #F04438;
+  --light-slow: #FBFBFB;
+  --bg-purple-light: #F5EDFF;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--darkClr);
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.text-grey {
+  color: var(--grey-clr) !important;
+}
+
+.text-grey2 {
+  color: var(--grey-clr2);
+}
+
+.text-dark-grey {
+  color: var(--dark-grey);
+}
+
+.text-dark2 {
+  color: var(--darkClr);
+}
+
+.text-purple {
+  color: var(--purple) !important;
+}
+
+.bg-purple-op1 {
+  background-color: var(--purple-op-1);
+}
+
+.bg-light3 {
+  background-color: var(--light-bg-3);
+}
+
+.bg-danger-op1 {
+  background-color: var(--danger-op-1);
+}
+
+.text-red {
+  color: var(--red-clr);
+}
+
+.h-70px {
+  height: 70px;
+}
+
+.text-grey-clr3 {
+  color: var(--grey-clr3);
+}
+
+.text-grey5 {
+  color: var(--grey-clr5);
+}
+
+.text-grey4 {
+  color: var(--grey-clr4);
+}
+
+.text-dark-purple-2 {
+  color: var(--dark-purple-2);
+}
+
+.w-fit-content {
+  width: fit-content;
+}
+
+.bg-light-purple {
+  background-color: var(--light-purple);
+}
+
+.border-purple {
+  border: 1px solid var(--purple);
+}
+
+.text-dark-purple-3 {
+  color: var(--dark-purple-3);
+}
+
+.text-grey-clr6 {
+  color: var(--grey-clr6);
+}
+
+.border-grey {
+  border-color: var(--border-clr);
+}
+
+.bg-light-slow {
+  background-color: var(--light-slow);
+}
+
+.text-dark-purple {
+  color: var(--dark-purple)
+}
+
+.radius-8 {
+  border-radius: 8px;
+}
+
+.bg-purple {
+  background: var(--purple);
+}
+
+.ck.ck-powered-by {
+  display: none !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.card-typo p {
+  font-size: 18px !important
+}
+
+.text-grey7 {
+  color: var(--grey-clr7);
+}
+
+.bg-slow-purple {
+  background-color: var(--bg-purple-light) !important;
+}
+
+input,
+select {
+  box-shadow: none !important;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.form-select {
+  --bs-form-select-bg-img: url("data: image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='%23aaa' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6' /></svg>");
+}
+
+@media(max-width: 991px) {
+  .table-responsive table td {
+    white-space: nowrap;
+  }
+
+  .w-medium-fit-content {
+    width: fit-content !important;
+  }
+}
+
+@media(min-width: 768px) {
+  .h-md-100 {
+    height: 100%;
+  }
+}
+
+@media(max-width: 575px) {
+  .px-smd-0 {
+    padding-inline: 0px;
+  }
+}
+
+.bg-purple-2 {
+  background-color: var(--purple-2);
+}
+
+.text-purple-2 {
+  color: var(--purple-2);
+}
