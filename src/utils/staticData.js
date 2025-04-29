@@ -137,16 +137,16 @@ export const focusCardsData = [
       "Whether you're unpacking family dynamics or identity exploration, Cymbiose supports your work with real-time, culturally informed insights  with tailored clinical intervention suggestions gaining valuable insights through our flexible opt-in tools.",
     img: "/images/focus-insights.png",
   },
-  {
-    title: "Professional growth",
-    description:
-      "Cymbiose recommends CEUs based on the real patterns in your sessions—because your development should be just as personalized as your care.",
-    img: "/images/focus-growth.png",
-  },
+  // {
+  //   title: "Professional growth",
+  //   description:
+  //     "Cymbiose recommends CEUs based on the real patterns in your sessions—because your development should be just as personalized as your care.",
+  //   img: "/images/focus-growth.png",
+  // },
   {
     title: "Team collaboration",
     description:
       "Instantly recap key session insights with AI-generated summaries. Quickly review highlights, share with supervisors, or send to clients for collaborative care.",
-    img: "/images/focus-growth.png",
+    img: "/images/focus-team.png",
   },
 ];

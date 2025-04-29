@@ -30,7 +30,7 @@ const HowWorksSection = () => {
   const [selected, setSelected] = useState(0);
 
   return (
-    <div className="py-5 my-4">
+    <div className="py-md-5 py-4 my-md-4 my-3">
       <Container>
         <SpanStyled
           $size="14px"
@@ -74,10 +74,10 @@ const HowWorksSection = () => {
               ))}
             </ul>
             <Box>
-              <WaitlistButton>Join Waitlist</WaitlistButton>
+              <WaitlistButton>Join the Community</WaitlistButton>
             </Box>
           </Col>
-          <Col className="mt-4 pt-1 text-center offset-1" lg={6} xs={12}>
+          <Col className="mt-4 pt-1 text-center offset-lg-1" lg={6} xs={12}>
             <img
               src="/images/work-frame.png"
               alt="work-frame"

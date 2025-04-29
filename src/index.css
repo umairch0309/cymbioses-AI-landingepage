@@ -1,6 +1,7 @@
 :root {
   --dark-purple: #1E0E32;
   --dark-purple-2: #2B2F38;
+  --pink: #E299FB;
   --dark-purple-3: #34343F;
   --purple: #8054E0;
   --purple-2: #3B2767;
@@ -287,6 +288,13 @@ select {
   }
 }
 
+@media(max-width: 767px) {
+  .res-heading-text {
+    font-size: 24px !important;
+    line-height: normal !important;
+  }
+}
+
 @media(max-width: 575px) {
   .px-smd-0 {
     padding-inline: 0px;
@@ -299,4 +307,16 @@ select {
 
 .text-purple-2 {
   color: var(--purple-2);
+}
+
+.landing-top-bg {
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0) 27.7%,
+      #ffffff 64.82%),
+    url(/images/grident-bg.png);
+  background-attachment: fixed;
+}
+
+.text-pink {
+  color: var(--pink)
 }

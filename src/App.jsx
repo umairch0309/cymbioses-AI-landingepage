@@ -14,11 +14,16 @@ import SessionsPage from "@pages/sessions/SessionsPage";
 import PublicLayout from "@/components/layouts/PublicLayout";
 import PrivateLayout from "@/components/layouts/PrivateLayout";
 import HomePage from "@pages/home";
+import OurStory from "@pages/OurStory";
+import LandingLayout from "@components/layouts/LandingLayout";
 
 function App() {
   return (
     <Routes>
-      <Route index element={<HomePage />} />
+      <Route path="/" element={<LandingLayout />}>
+        <Route index element={<HomePage />} />
+        <Route path="/our-story" element={<OurStory />} />
+      </Route>
       <Route path="/login" element={<PublicLayout />}>
         <Route index element={<LoginForm />} />
       </Route>

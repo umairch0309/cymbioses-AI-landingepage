@@ -12,7 +12,7 @@ export const NavbarBrand = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #272727;
+  color: var(--dark-purple-2);
   font-weight: 600;
 
   .brand-text {
@@ -22,14 +22,14 @@ export const NavbarBrand = styled(Link)`
   }
 
   &:hover {
-    color: #272727;
+    color: var(--dark-purple-2);
   }
 `;
 
 export const LogoCircle = styled.div`
   width: 32px;
   height: 32px;
-  background-color: #272727;
+  background-color: var(--dark-purple-2);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -37,7 +37,7 @@ export const LogoCircle = styled.div`
 `;
 
 export const NavbarNav = styled(Nav)`
-  @media (max-width: 991px) {
+  @media (max-width: 992px) {
     margin: 1rem 0;
   }
 `;
@@ -51,12 +51,11 @@ export const NavItem = styled.div`
 `;
 
 export const NavLink = styled(Link)`
-  color: ${(props) => (props.$active ? "#272727" : "#6c757d")};
   text-decoration: none;
   font-weight: 500;
   padding: 0.5rem 0;
   position: relative;
-
+  color: var(--dark-purple-2);
   &:after {
     content: "";
     position: absolute;
@@ -64,13 +63,11 @@ export const NavLink = styled(Link)`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #272727;
+    background-color: var(--dark-purple-2);
     transition: width 0.3s ease;
   }
 
   &:hover {
-    color: #272727;
-
     &:after {
       width: 100%;
     }
@@ -89,7 +86,7 @@ export const NavbarActions = styled.div`
 `;
 
 export const LoginLink = styled(Link)`
-  color: #272727;
+  color: var(--dark-purple-2);
   text-decoration: none;
   font-weight: 500;
   margin-right: 1.5rem;
@@ -123,5 +120,8 @@ export const StartTrialButton = styled.button`
   &:active {
     transform: translateY(0);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  @media (max-width: 992px) {
+    width: 100%;
   }
 `;

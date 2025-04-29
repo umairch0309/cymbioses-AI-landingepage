@@ -15,11 +15,12 @@ const TestimonialSlider = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    adaptiveHeight: true,
   };
 
   return (
-    <Container className="mt-5 pb-5">
-      <TestimonialSliderWrapper className="pt-5 px-5 mb-5">
+    <Container className="mt-md-5">
+      <TestimonialSliderWrapper className="pt-5 px-lg-5 px-3 mb-5">
         <Box className="text-center mb-5">
           <SpanStyled
             className="text-purple text-uppercase border py-1 px-2 rounded-pill"
@@ -34,7 +35,7 @@ const TestimonialSlider = () => {
         <Slider {...settings}>
           {testimonialsData.map((item, key) => (
             <div key={"item__" + key + 1}>
-              <div className="text-center px-5">
+              <div className="text-center px-lg-5 px-md-3">
                 <Paragraph $size="22px" $weight="400" className="text-white">
                   {item.text}
                 </Paragraph>

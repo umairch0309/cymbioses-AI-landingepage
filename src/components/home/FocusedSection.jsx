@@ -9,19 +9,19 @@ import { focusCardsData } from "../../utils/staticData";
 
 const FocusedOnSection = () => {
   return (
-    <FocusedOnSectionWrapper className="bg-purple-2 py-5">
-      <Container className="pt-5">
-        <FocusedOnSectionContent className="p-5">
-          <HeadingStyled
+    <FocusedOnSectionWrapper className="bg-purple-2 py-md-5 py-3">
+      <Container className="pt-md-5 pt-4">
+        <FocusedOnSectionContent className="p-md-5 p-4">
+          {/* <HeadingStyled
             $size="14px"
             className="text-white text-center text-uppercase mb-3"
             $weight={500}
           >
             WE ARE FOCUSED ON
-          </HeadingStyled>
+          </HeadingStyled> */}
           <HeadingStyled
             $size="23px"
-            className="text-white mb-5 text-center  mb-3"
+            className="text-white res-heading mb-md-5 mb-4 text-center"
             $line="30px"
           >
             Reducing burnout, not your

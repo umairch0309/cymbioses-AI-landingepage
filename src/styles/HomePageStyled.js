@@ -3,10 +3,12 @@ import { Button } from "reactstrap";
 
 export const HeroSection = styled.section`
   padding: 80px 0;
-  background-color: #f9f8f6;
 
-  @media (max-width: 768px) {
-    padding: 60px 0;
+  @media (max-width: 767px) {
+    padding: 30px 0;
+    h1 {
+      font-size: 22px;
+    }
   }
 `;
 
@@ -108,7 +110,15 @@ export const FocusedOnSectionContent = styled.div`
     rgba(253, 252, 251, 0.05) 45.98%,
     rgba(249, 248, 245, 0.1) 100%
   );
-  border-radius: 48px;
+  @media (max-width: 767px) {
+    border-radius: 20px;
+    .res-heading {
+      font-size: 20px;
+    }
+  }
+  @media (min-width: 768px) {
+    border-radius: 48px;
+  }
 `;
 
 export const FocusedSectionItem = styled.div`

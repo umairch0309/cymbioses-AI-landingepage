@@ -1,7 +1,7 @@
 import { Navigate, Outlet } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
-import Navbar from "@components/layouts/Navbar";
 import Footer from "@components/layouts/Footer";
+import LandingNavbar from "@components/landing/LandingNavbar";
 
 const PublicLayout = () => {
   const { isAuthenticated, loading } = useAuth();
@@ -10,7 +10,7 @@ const PublicLayout = () => {
 
   return !isAuthenticated ? (
     <div className="d-flex flex-column min-vh-100">
-      <Navbar />
+      <LandingNavbar />
       <Outlet />
       <Footer />
     </div>

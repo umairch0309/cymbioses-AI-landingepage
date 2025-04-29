@@ -19,4 +19,15 @@ export const TestimonialSliderWrapper = styled.div`
       }
     }
   }
+  @media (max-width: 767px) {
+    h3 {
+      font-size: 22px;
+    }
+    p {
+      font-size: 14px;
+    }
+    .slick-dots {
+      width: 100%;
+    }
+  }
 `;

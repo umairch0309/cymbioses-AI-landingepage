@@ -56,10 +56,14 @@ const Footer = () => {
                 </SocialIconsContainer>
               </div>
               <div className="d-flex flex-wrap justify-content-md-end gap-3 mt-3">
-                <FooterLink href="#consent">Consent Form</FooterLink>
-                <FooterLink href="#terms">Terms and Conditions</FooterLink>
-                <FooterLink href="#privacy">Privacy Policy</FooterLink>
-                <FooterLink href="#hipaa">HIPAA Compliance</FooterLink>
+                <FooterLink to="https://medium.com/@cymbiose.ai">
+                  Blog
+                </FooterLink>
+                <FooterLink to="https://forms.gle/hGZprD8Grd2sRV4S9">
+                  Feature Requests
+                </FooterLink>
+                <FooterLink href="#privacy">Help Center</FooterLink>
+                <FooterLink to="/our-story">Our Story</FooterLink>
               </div>
             </Col>
           </Row>

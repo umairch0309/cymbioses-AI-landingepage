@@ -8,7 +8,7 @@ import StepThree from "@components/signup/StepThree";
 import SignupSidebar from "@components/signup/SignupSidebar";
 import { MainContainer } from "@styles/PageStyled";
 import { signupSchema } from "@utils/validation/authSchema";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function SignupPage() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -78,7 +78,10 @@ export default function SignupPage() {
       <Container fluid className="p-0">
         <Row className="g-0">
           <Col md={6} className="p-md-5 p-4">
-            <img src="/images/icons/logo.svg" alt="Logo" className="me-2" />
+            <Link to="/" className="text-decoration-none">
+              <img src="/images/icons/logo.svg" alt="Logo" className="me-2" />
+            </Link>
+
             <FormProvider {...methods}>
               <form onSubmit={methods.handleSubmit(onSubmit)}>
                 {currentStep === 1 && <StepOne />}
