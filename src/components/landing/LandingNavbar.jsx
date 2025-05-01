@@ -64,12 +64,12 @@ const LandingNavbar = () => {
           <NavbarActions className="d-block d-lg-flex">
             <NavLink
               $active={isActive("/login")}
-              className="me-4 d-none d-lg-block"
+              className="d-none d-lg-block"
               to="/login"
             >
               Login
             </NavLink>
-            <StartTrialButton>Start Trial</StartTrialButton>
+            {/* <StartTrialButton>Start Trial</StartTrialButton> */}
           </NavbarActions>
         </Collapse>
       </Container>

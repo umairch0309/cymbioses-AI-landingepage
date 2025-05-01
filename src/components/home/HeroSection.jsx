@@ -21,11 +21,13 @@ const HeroSectionContent = () => {
               </HeroTitle>
               <HeroDescription>
                 Culturally informed AI that saves you 16+ hours a month on
-                documentation, while weaving clinical insights and cultural
-                insights, and smart business tools into your everyday practice.
-                Made for therapists by therapists.
+                documentation, that embeds culturally attuned clinical insights,
+                and professional development tools into your everyday practice.
+                Made for therapists by therapists.
               </HeroDescription>
-              <WaitlistButton>Join the Community</WaitlistButton>
+              <WaitlistButton to="/join-community">
+                Join the Community
+              </WaitlistButton>
             </HeroContent>
           </Col>
           <Col lg={5}>

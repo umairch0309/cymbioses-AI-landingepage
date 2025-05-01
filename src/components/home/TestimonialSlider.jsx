@@ -29,7 +29,7 @@ const TestimonialSlider = () => {
             Testimonials
           </SpanStyled>
           <HeadingStyled className="text-white mt-2 pt-1" $size="36px">
-            Hear it from our users
+            Hear it from our community
           </HeadingStyled>
         </Box>
         <Slider {...settings}>

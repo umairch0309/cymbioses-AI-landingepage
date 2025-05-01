@@ -73,15 +73,17 @@ const HowWorksSection = () => {
                 </li>
               ))}
             </ul>
-            <Box>
-              <WaitlistButton>Join the Community</WaitlistButton>
+            <Box className="text-md-start text-center">
+              <WaitlistButton to="/join-community">
+                Join the Community
+              </WaitlistButton>
             </Box>
           </Col>
           <Col className="mt-4 pt-1 text-center offset-lg-1" lg={6} xs={12}>
             <img
               src="/images/work-frame.png"
               alt="work-frame"
-              className="img-fluid"
+              className="img-fluid mx-auto"
             />
           </Col>
         </Row>

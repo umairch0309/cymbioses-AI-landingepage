@@ -128,7 +128,7 @@ export const testimonialsData = [
 export const focusCardsData = [
   {
     title: "Save 16+ hours per month",
-    description: `Instantly capture clinical notes using one of our SOAP, DAP, Treatment Plans or Intake templates. Quickly review, session summaries share with supervisors, or send homework directly to clients.`,
+    description: `Instantly capture clinical notes using one of our SOAP, DAP, Treatment Plans or Intake templates.Quickly review, session summaries share with supervisors, or send homework directly to clients.`,
     img: "/images/focus-note.png",
   },
   {

@@ -16,6 +16,7 @@ import PrivateLayout from "@/components/layouts/PrivateLayout";
 import HomePage from "@pages/home";
 import OurStory from "@pages/OurStory";
 import LandingLayout from "@components/layouts/LandingLayout";
+import JoinCommunity from "./pages/community/JoinCommunity";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route path="/" element={<LandingLayout />}>
         <Route index element={<HomePage />} />
         <Route path="/our-story" element={<OurStory />} />
+        <Route path="/join-community" element={<JoinCommunity />} />
       </Route>
       <Route path="/login" element={<PublicLayout />}>
         <Route index element={<LoginForm />} />

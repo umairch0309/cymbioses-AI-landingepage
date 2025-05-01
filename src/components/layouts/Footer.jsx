@@ -18,11 +18,13 @@ const Footer = () => {
           <Row className="align-items-center">
             <Col md={6} className="mb-3 mb-md-0">
               <div className="mb-2">
-                <img
-                  src="/images/icons/logo.svg"
-                  alt="Cymbiose"
-                  className="logo-img"
-                />
+                <Link to="/">
+                  <img
+                    src="/images/icons/logo.svg"
+                    alt="Cymbiose"
+                    className="logo-img"
+                  />
+                </Link>
               </div>
               <FooterTagline>
                 Fully redefining the relationship
@@ -62,7 +64,7 @@ const Footer = () => {
                 <FooterLink to="https://forms.gle/hGZprD8Grd2sRV4S9">
                   Feature Requests
                 </FooterLink>
-                <FooterLink href="#privacy">Help Center</FooterLink>
+                <FooterLink href="#">Help Center</FooterLink>
                 <FooterLink to="/our-story">Our Story</FooterLink>
               </div>
             </Col>

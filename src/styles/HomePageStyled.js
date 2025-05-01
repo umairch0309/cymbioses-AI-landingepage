@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Button } from "reactstrap";
+import { Link } from "react-router-dom";
 
 export const HeroSection = styled.section`
   padding: 80px 0;
@@ -49,16 +50,17 @@ export const HeroDescription = styled.p`
   }
 `;
 
-export const WaitlistButton = styled(Button)`
+export const WaitlistButton = styled(Link)`
   background-color: #9747ff;
   color: white;
   border: none;
   border-radius: 8px;
   padding: 12px 32px;
   font-weight: 500;
+  display: inline-block;
   font-size: 16px;
   transition: all 0.3s ease;
-
+  text-decoration: none;
   &:hover {
     background-color: #8a3df0;
     transform: translateY(-2px);

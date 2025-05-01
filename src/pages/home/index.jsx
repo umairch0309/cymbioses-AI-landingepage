@@ -40,7 +40,9 @@ export default function HomePage() {
           intelligent, automated systems.
         </Paragraph>
         <Box className="text-center pt-3">
-          <WaitlistButton>Join the Community</WaitlistButton>
+          <WaitlistButton to="/join-community">
+            Join the Community
+          </WaitlistButton>
         </Box>
       </Container>
     </div>
