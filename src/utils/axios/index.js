@@ -56,7 +56,8 @@ const axiosBaseQuery = ({ baseUrl } = { baseUrl: "" }) => {
       if (err.response?.status === 401) {
         store.dispatch(logoutUser());
       }
-      window.alert(
+
+      toast.error(
         err.response?.data?.message || err.message || GENERAL_API_ERR_MSG
       );
 

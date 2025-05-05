@@ -5,6 +5,7 @@ import { authSlice } from "@services/auth/authSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { dashboardApiSlice } from "@services/dashboard/dashboardApiSlice";
 import { dashboardSlice } from "@services/dashboard/dashboardSlice";
+import { communityApiSlice } from "@services/community/communityApiSlice";
 
 export const store = configureStore({
   reducer: combineReducers({
@@ -12,12 +13,14 @@ export const store = configureStore({
     [authSlice.name]: authSlice.reducer,
     [dashboardApiSlice.reducerPath]: dashboardApiSlice.reducer,
     [dashboardSlice.name]: dashboardSlice.reducer,
+    [communityApiSlice.reducerPath]: communityApiSlice.reducer,
   }),
 
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(
       authApiSlice.middleware,
-      dashboardApiSlice.middleware
+      dashboardApiSlice.middleware,
+      communityApiSlice.middleware
     ),
 });
 

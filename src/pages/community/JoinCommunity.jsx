@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { LoginContainer, Title, ContinueButton } from "@styles/LoginFormStyled";
 import { Col, Form, FormGroup, Label, Row } from "reactstrap";
 import FormInput from "@components/ui/FormInput";
@@ -6,10 +5,10 @@ import { communitySchema } from "@utils/validation/authSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { HeadingStyled } from "../../styles/ElementsStyled";
+import { useRegisterCommunityMutation } from "../../services/community/communityApiSlice";
 
 const JoinCommunity = () => {
-  const [loading, setLoading] = useState(false);
-
+  const [registerCommunity, { isLoading }] = useRegisterCommunityMutation();
   const {
     register,
     handleSubmit,
@@ -17,7 +16,10 @@ const JoinCommunity = () => {
   } = useForm({
     resolver: zodResolver(communitySchema),
   });
-  const onSubmit = async () => {};
+  const onSubmit = async (data) => {
+    console.log("data", data);
+    await registerCommunity(data).unwrap();
+  };
 
   return (
     <LoginContainer className="mx-auto my-md-5 my-3 mb-0">
@@ -85,7 +87,7 @@ const JoinCommunity = () => {
         <ContinueButton
           className="w-100 py-2 mb-3"
           type="submit"
-          disabled={loading}
+          disabled={isLoading ? "disabled" : ""}
         >
           Continue
         </ContinueButton>
