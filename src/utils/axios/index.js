@@ -41,7 +41,10 @@ const axiosBaseQuery = ({ baseUrl } = { baseUrl: "" }) => {
         "\n******** END ********\n"
       );
 
-      if (!excludedUrls.some((endpoint) => url.endsWith(endpoint))) {
+      if (
+        !excludedUrls.some((endpoint) => url.endsWith(endpoint)) &&
+        method !== "GET"
+      ) {
         toast.success(result.data.message || "Request successful");
       }
 

@@ -83,7 +83,7 @@ const columns = [
 const Dashboard = () => {
   const { data } = useDashboardStatsQuery();
   const dispatch = useAppDispatch();
-  
+  const stats = useAppSelector((state) => state.dashboard.stats);
 
   useEffect(() => {
     if (data?.data) {

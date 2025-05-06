@@ -15,7 +15,15 @@ export const communityApiSlice = createApi({
         data,
       }),
     }),
+    allCommunities: build.query({
+      query: () => ({
+        url: "/community/get",
+        method: "GET",
+      }),
+      forceRefetch: () => true,
+    }),
   }),
 });
 
-export const { useRegisterCommunityMutation } = communityApiSlice;
+export const { useRegisterCommunityMutation, useAllCommunitiesQuery } =
+  communityApiSlice;
