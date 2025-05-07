@@ -25,7 +25,7 @@ const JoinCommunity = () => {
       <div className="text-center mb-4">
         <Title>
           <HeadingStyled className="text-purple" $size="34px" $weight={700}>
-            Comming Soon
+            Coming Soon
           </HeadingStyled>
         </Title>
         <p className="mb-4 mt-0">
