@@ -17,7 +17,6 @@ const JoinCommunity = () => {
     resolver: zodResolver(communitySchema),
   });
   const onSubmit = async (data) => {
-    console.log("data", data);
     await registerCommunity(data).unwrap();
   };
 
