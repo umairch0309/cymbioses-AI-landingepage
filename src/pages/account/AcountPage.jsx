@@ -2,7 +2,7 @@ import { useState } from "react";
 import { TabsContainer, TabButton } from "@styles/SessionsTabStyled";
 import HistoryTabContent from "@components/account/HistoryTabContent";
 import BillingTabContent from "@components/account/BillingTabContent";
-import AccountForm from "../../components/account/accountForm";
+import AccountForm from "@components/account/AccountForm"; // Fixed capitalization
 
 const AccountPage = () => {
   const [activeTab, setActiveTab] = useState("account_details");
