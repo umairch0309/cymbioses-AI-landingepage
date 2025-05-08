@@ -18,7 +18,7 @@ import { setUser } from "@services/auth/authSlice";
 const LoginForm = () => {
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
-  const [login, { loading }] = useLoginMutation();
+  const [login, { isLoading }] = useLoginMutation();
   const {
     register,
     handleSubmit,
@@ -111,7 +111,7 @@ const LoginForm = () => {
         <ContinueButton
           className="w-100 py-2 mb-3"
           type="submit"
-          disabled={loading}
+          disabled={isLoading ? "disabled" : ""}
         >
           Continue
         </ContinueButton>

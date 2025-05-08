@@ -7,6 +7,7 @@ import {
   Settings,
   Sparkles,
   XIcon,
+  UsersRound,
 } from "lucide-react";
 import { SidebarLinkStyled, SidebarContainer } from "@styles/SidebarStyled";
 
@@ -53,6 +54,7 @@ export function Sidebar({ setIsOpen, isOpen }) {
         <SidebarItem icon={Users} label="Clients" href="/clients" />
         <SidebarItem icon={Video} label="Sessions" href="/sessions" />
         {/* <SidebarItem icon={FileText} label="Templates" href="/templates" /> */}
+        <SidebarItem icon={UsersRound} label="Community" href="/community" />
         <SidebarItem icon={Settings} label="Account" href="/account" />
       </nav>
     </SidebarContainer>

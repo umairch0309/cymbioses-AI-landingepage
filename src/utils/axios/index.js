@@ -41,7 +41,10 @@ const axiosBaseQuery = ({ baseUrl } = { baseUrl: "" }) => {
         "\n******** END ********\n"
       );
 
-      if (!excludedUrls.some((endpoint) => url.endsWith(endpoint))) {
+      if (
+        !excludedUrls.some((endpoint) => url.endsWith(endpoint)) &&
+        method !== "GET"
+      ) {
         toast.success(result.data.message || "Request successful");
       }
 
@@ -56,7 +59,8 @@ const axiosBaseQuery = ({ baseUrl } = { baseUrl: "" }) => {
       if (err.response?.status === 401) {
         store.dispatch(logoutUser());
       }
-      window.alert(
+
+      toast.error(
         err.response?.data?.message || err.message || GENERAL_API_ERR_MSG
       );
 

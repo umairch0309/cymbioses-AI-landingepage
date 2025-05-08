@@ -16,7 +16,8 @@ import PrivateLayout from "@/components/layouts/PrivateLayout";
 import HomePage from "@pages/home";
 import OurStory from "@pages/OurStory";
 import LandingLayout from "@components/layouts/LandingLayout";
-import JoinCommunity from "./pages/community/JoinCommunity";
+import JoinCommunity from "@pages/community/JoinCommunity";
+import CommunityList from "@pages/community/CommunityList";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
       <Route path="/signup" element={<SignupPage />} />
       <Route path="/" element={<PrivateLayout />}>
         <Route path="/get-started" element={<Dashboard />} />
+        <Route path="/community" element={<CommunityList />} />
         <Route path="/dashboard" element={<GetStartedPage />} />
         <Route path="/clients" element={<ClientsPage />} />
         <Route path="/clients/:id" element={<ClientDetailPage />} />

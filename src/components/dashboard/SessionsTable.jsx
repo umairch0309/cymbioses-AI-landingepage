@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export function SessionsTable({
   rows,
   columns,
-  title,
+  title = "LATEST SESSIONS",
   redirect = true,
   actions = false,
   renderActions,
@@ -15,7 +15,7 @@ export function SessionsTable({
     <div>
       {title && (
         <HeadingStyled $size="12px" className="text-grey text-uppercase mb-3">
-          LATEST SESSIONS
+          {title}
         </HeadingStyled>
       )}
       <div className="card overflow-hidden">
