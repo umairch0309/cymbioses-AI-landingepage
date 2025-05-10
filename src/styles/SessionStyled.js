@@ -157,9 +157,6 @@ export const TemplateGrid = styled.div`
   @media (max-width: 767px) {
     grid-template-columns: 1fr;
   }
-  @media (min-width: 768px) {
-    grid-template-columns: 1fr;
-  }
 `;
 
 export const TemplateCard = styled.div`

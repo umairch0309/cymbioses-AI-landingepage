@@ -29,15 +29,16 @@ const PricingTable = () => {
           <Col xs={12} md={4}>
             <PricingColumn className="border-end">
               <PricingHeader className="border-bottom">
-                <PricingPrice>$0.33</PricingPrice>
-                <PricingUnit>/Note</PricingUnit>
+                <PricingPrice>$1</PricingPrice>
+                <PricingUnit>/Session</PricingUnit>
                 <PricingButton disabled>Current plan</PricingButton>
               </PricingHeader>
-
-              <PricingTier className="border-bottom">Pay as you go</PricingTier>
-
               <PricingTier className="border-bottom">
-                Flexible note generation
+                SOAP, DAP, Intake Session Summary, Treatment Plans, Action Plans
+                for Clients
+              </PricingTier>
+              <PricingTier className="border-bottom">
+                Clinical and culturally informed insights
               </PricingTier>
             </PricingColumn>
           </Col>
@@ -61,12 +62,19 @@ const PricingTable = () => {
                   For individual practices
                 </Paragraph>
               </PricingTier>
-
               <PricingTier className="border-bottom">
                 Up to 80 notes per month
               </PricingTier>
-
-              <PricingTier>Saves 8 hours per month</PricingTier>
+              <PricingTier className="border-bottom">
+                SOAP, DAP, Intake Session Summary, Treatment Plans, Action Plans
+                for Clients
+              </PricingTier>
+              <PricingTier className="border-bottom">
+                Clinical and culturally informed insights
+              </PricingTier>
+              <PricingTier className="border-bottom">
+                Auto DSM-V ICD/CPT Diagnosis
+              </PricingTier>
             </PricingColumn>
           </Col>
 
@@ -77,7 +85,6 @@ const PricingTable = () => {
                 <PricingPrice>Custom</PricingPrice>
                 <PricingButton color="primary">Contact Us</PricingButton>
               </PricingHeader>
-
               <PricingTier className="border-bottom">
                 Enterprise
                 <Paragraph
@@ -88,19 +95,19 @@ const PricingTable = () => {
                   Large institutions and hospitals
                 </Paragraph>
               </PricingTier>
-
               <PricingTier className="border-bottom">
-                Unlimited notes per month
-                <Paragraph
-                  $weight={400}
-                  $size={"13px"}
-                  className="mb-0 mt-2 text-grey7"
-                >
-                  With custom workflows & API integration
-                </Paragraph>
+                Up to 160 notes per month
               </PricingTier>
-
-              <PricingTier>Saves 100s of hours per month</PricingTier>
+              <PricingTier className="border-bottom">
+                SOAP, DAP, Intake Session Summary, Treatment Plans, Action Plans
+                for Clients
+              </PricingTier>
+              <PricingTier className="border-bottom">
+                Clinical and culturally informed insights
+              </PricingTier>
+              <PricingTier className="border-bottom">
+                Auto DSM-V ICD/CPT Diagnosis
+              </PricingTier>
             </PricingColumn>
           </Col>
         </Row>

@@ -2,7 +2,9 @@ import { useState } from "react";
 import { TabsContainer, TabButton } from "@styles/SessionsTabStyled";
 import HistoryTabContent from "@components/account/HistoryTabContent";
 import BillingTabContent from "@components/account/BillingTabContent";
-import AccountForm from "../../components/account/accountForm";
+import AccountForm from "@components/account/accountForm";
+import SecurityTabContent from "@components/account/SecurityTabContent";
+import ClientConsent from "@components/account/ClientConsent";
 
 const AccountPage = () => {
   const [activeTab, setActiveTab] = useState("account_details");
@@ -30,15 +32,23 @@ const AccountPage = () => {
             Billing
           </TabButton>
           <TabButton
-            $active={activeTab === "settings"}
-            onClick={() => setActiveTab("settings")}
+            $active={activeTab === "security"}
+            onClick={() => setActiveTab("security")}
           >
-            Settings
+            Security
+          </TabButton>
+          <TabButton
+            $active={activeTab === "client_consent"}
+            onClick={() => setActiveTab("client_consent")}
+          >
+            Client Consent & BAA
           </TabButton>
         </TabsContainer>
         {activeTab === "account_details" && <AccountForm />}
         {activeTab === "history" && <HistoryTabContent />}
         {activeTab === "billing" && <BillingTabContent />}
+        {activeTab === "security" && <SecurityTabContent />}
+        {activeTab === "client_consent" && <ClientConsent />}
       </div>
     </div>
   );

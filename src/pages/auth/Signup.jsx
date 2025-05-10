@@ -99,7 +99,6 @@ export default function SignupPage() {
               </form>
             </FormProvider>
           </Col>
-
           <Col md={6}>
             <SignupSidebar currentStep={currentStep} />
           </Col>
